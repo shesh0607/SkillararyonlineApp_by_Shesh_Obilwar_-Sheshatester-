@@ -12,7 +12,7 @@ import genericLib.BaseClass;
 public class Testcase1 extends BaseClass {
 	
 	@Test
-	public void tc1() {
+	public void tc1() throws InterruptedException {
 		SkillaryLoginPage s=new SkillaryLoginPage(driver);
 		s.gearsbutton();
 		s.skillrarydemoapplication();
@@ -26,6 +26,7 @@ public class Testcase1 extends BaseClass {
 		sd.seleniumtrainingtab();
 		
 		AddtocartPage a=new AddtocartPage(driver);
+
 		driverutilies.doubleclick(driver, a.getAddbtn());
 		a.adddtocartbtn();
 		driverutilies.alertpopup(driver);

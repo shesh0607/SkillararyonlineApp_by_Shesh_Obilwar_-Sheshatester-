@@ -24,7 +24,7 @@ public class WebDriverUtilites {
 	
 	public void doubleclick(WebDriver driver,WebElement ele) {
 		Actions a=new Actions(driver);
-		a.doubleClick().perform();
+		a.doubleClick(ele).perform();
 	}
 	
 	public void rightclick(WebDriver driver,WebElement ele ) {
