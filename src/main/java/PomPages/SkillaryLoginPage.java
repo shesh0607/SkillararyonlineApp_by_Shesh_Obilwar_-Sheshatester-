@@ -26,6 +26,7 @@ public class SkillaryLoginPage {
 	}
 	
 	
+	
 	public void gearsbutton() {
 		gearbtn.click();
 	}
